@@ -157,3 +157,16 @@ terraform output
 It will display the public IP addresses of the created EC2 instances (`client_ip` and `server_ip`).
 
 2. SSH into the client and server instances using the private key
+
+
+
+## Next steps: 
+
+- Encrypt all passwords by ansible-vault
+- Setup Nginx and setup certificates for https connection
+- Create default dashboards for grafana
+- Resolve problem with connection to local mySql from docker
+- Deploy the terraform main.tf from AWS CLI to prevent open 22 to worldwide 
+- Secure all ports inside the cluster ( allow only necessary connections)
+- imporve settings for prometheus and grafana
+- 
