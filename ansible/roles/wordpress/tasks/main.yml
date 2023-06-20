@@ -1,0 +1,15 @@
+---
+# tasks file for wordpress
+- name: Start WordPress container
+  docker_container:
+    name: wordpress_app
+    image: wordpress:latest
+    restart_policy: always
+    ports:
+      - "8080:80"
+    env:
+      WORDPRESS_DB_HOST: "{{ ansible_hostname }}:33060"
+      WORDPRESS_DB_USER: "{{WP_DB_USER}}"
+      WORDPRESS_DB_PASSWORD: "{{WP_DB_PASSWORD}}"
+      WORDPRESS_DB_NAME: "{{WP_DB_NAME}}"
+    state: started

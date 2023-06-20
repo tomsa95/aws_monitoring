@@ -1,0 +1,6 @@
+---
+# defaults file for my_sql
+mysql_user: wordpress
+mysql_password: password
+mysql_db: wordpress
+mysql_root_password: sudopass

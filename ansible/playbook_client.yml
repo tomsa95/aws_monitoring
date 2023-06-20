@@ -1,0 +1,8 @@
+- become: yes
+  hosts: tag_Name_client
+  user: ubuntu
+  roles:
+    - node-exporter
+    - docker
+    - my_sql
+    - wordpress

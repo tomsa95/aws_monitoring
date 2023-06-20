@@ -1,0 +1,6 @@
+- become: yes
+  hosts: tag_Name_server
+  user: ubuntu
+  roles:
+    - prometheus
+    - grafana

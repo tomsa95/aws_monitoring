@@ -1,0 +1,5 @@
+---
+# defaults file for roles/grafana
+grafana_admin_password: "abc1234"
+grafana_datasource_dir_configuration: "/etc/grafana/provisioning/datasources"
+grafana_dashboard_dir_configuration: "/etc/grafana/provisioning/dashboards"

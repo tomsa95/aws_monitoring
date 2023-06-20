@@ -1,0 +1,6 @@
+---
+# defaults file for wordpress
+#WP_DB_HOST: "{{ansible_env.hostname}}:33060"
+WP_DB_USER: wordpress
+WP_DB_PASSWORD: password
+WP_DB_NAME: wordpress
